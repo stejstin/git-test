@@ -7,8 +7,15 @@ int sum(int n){
      sum += i;
   }
   return sum;
-}			     
-	
+}
+
+int product(int n){
+  int product = 1;
+  for(int i = 1; i <= n; i++){
+    product *= i;
+   }
+return product;
+}
 
 int main(){
 
@@ -16,6 +23,7 @@ int main(){
   cout << "please enter a number" << endl;
   int n;
   cin >> n;
-  cout << sum(n);
+  cout << "Sum: " << sum(n) << endl;
+  cout << "Product: " << product(n) << endl;
 
 }
